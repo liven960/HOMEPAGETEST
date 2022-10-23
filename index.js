@@ -60,9 +60,6 @@ $('#input-sentence').keyup(function input_sync(key) {
 })
 
 function show() {
-    background_letter
-    animation_speed
-    go_back
     let radio_result = '제자리O';
     if (go_back == 1){
         radio_result = '제자리O';
@@ -171,7 +168,7 @@ $('#input-animation').keyup(function input_sync(key) {
 })
 function get_animation_speed() {
     if ($('#input-animation') != ' '){
-        animation_speed = $('#input-animation').val();
+        animation_speed = Number($('#input-animation').val());
         show();
     }
     return;
