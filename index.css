@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'neodgm';
+    src: url('./NeoDunggeunmoPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #171717;
+    font-family: 'neodgm';
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+/*index.html*/
+#pattern-body{
+    width: 100vw;
+    height: 100vh;
+    /*background-color: rgba(220, 157, 157, 0.81);*/
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+}
+.pattern-container {
+    /*border: 1px solid #00FF00;*/
+    width: 105%;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    margin-left: -7px;
+    margin-top: 0px;
+}
+.pattern {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #00FF00;
+    color: #00FF00;
+    text-align: center;
+    font-size: 29px;
+    margin-top: 0px;
+    cursor: grab;
+
+}
+#home-graphic {
+    min-width: 300px;
+    width: 25vw;
+    height: 45vh;
+    background-color: #FFFFFF;
+    border: 1px solid white;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home-text {
+    position: relative;
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.instruct {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'neodgm';
+    margin-bottom: 0rem;
+}
+.show {
+    font-family: 'neodgm';
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    line-height: 1.2rem;
+}
+.change-box {
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.input-box {
+    display: flex;
+    flex-direction: row;
+    height: 1.8rem;
+    margin: 0.2rem;
+}
+.input {
+    font-size: 1rem;
+    font-family: 'neodgm';
+    text-align: center;
+}
+.button {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-family: 'neodgm';
+}
+.input-radio {
+    font-size: 0.9rem;
+    margin-right: 1.1rem;
+    margin-top: 0.2rem;
+}
+#radio-box {
+    margin-top: 0.2rem;
+}
+#button-radio {
+    margin-left: 0.3rem;
+}
+
+
+#cc {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    text-align: center;
+
+    z-index: 3;
+
+    position: absolute;
+    top: 93%;
+    left: 0;
+    right: 0;
+    bottom: 7%;
+}

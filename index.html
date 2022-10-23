@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--반응형 웹페이지용-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Home Page</title>
+</head>
+<body onload="show_box()">
+    <!--  home  -->
+    <div id="pattern-body">
+<!--        <div class="pattern-container">-->
+<!--            <div class="pattern"></div>-->
+<!--        </div>-->
+    </div>
+
+    <div id="home-graphic">
+        <div id="home-text">홈화면 테스트
+            <div class="instruct">
+                문장 및 에니메이션을 입력하고<br>제출 버튼/엔터를 누르면 적용됩니다.
+            </div>
+            <div class="show">
+                현재 패턴: <br>글자로패턴을만들어보았습니다.<br>
+                애니메이션 speed: 0<br>
+                제자리O/X: 제자리O
+            </div>
+            <div class="change-box">
+                <div class="input-box">
+                    <input id="input-sentence" class="input" placeholder="글자 패턴 문장 입력">
+                    <button class="button" onclick="get_input()">제출</button>
+                </div>
+                <div class="input-box">
+                    <input id="input-animation" pattern="[0-9]+" type="number" class="input"
+                           placeholder="animation speed 입력">
+                    <button class="button" onclick="get_animation_speed()">제출</button>
+                </div>
+                <div class="input-box" id="radio-box">
+                    <label class="input-radio"><input type="radio" name="get_back" value="1" checked>제자리O</label>
+                    <label class="input-radio"><input type="radio" name="get_back" value="0">제자리X</label>
+                    <button class="button" id="button-radio" onclick="get_choice()">제출</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cc">
+        ⓒ 2022. TEAM COYK All rights reserved.
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
