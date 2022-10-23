@@ -60,7 +60,9 @@ body::-webkit-scrollbar {
 
 }
 #home-graphic {
+    max-width: 350px;
     min-width: 300px;
+    max-height: 400px;
     width: 25vw;
     height: 45vh;
     background-color: #FFFFFF;
