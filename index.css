@@ -4,6 +4,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'PiCell';
+    src: url('../source/Pi-Cell.otf');
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+    /*font-display: swap;*/
+}
 body {
     background-color: #171717;
     font-family: 'neodgm';
@@ -53,6 +60,7 @@ body::-webkit-scrollbar {
     height: 30px;
     border: 1px solid #00FF00;
     color: #00FF00;
+    font-family: 'PiCell';
     text-align: center;
     font-size: 29px;
     margin-top: 0px;
