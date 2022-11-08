@@ -10,6 +10,17 @@ let go_back = 1;
 $(function onload() {
     let width = $('.change-box').css('width');
     $('.show').css('width', width);
+    
+    let uAgent = navigator.userAgent.toLowerCase();
+    // 아래는 모바일 장치들의 모바일 페이지 접속을위한 스크립트
+    let mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce', 'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
+    for (let i = 0; i < mobilePhones.length; i++) {
+        if (uAgent.indexOf(mobilePhones[i]) != -1) {
+            console.log(1);
+            $('#home-text').empty();
+            $('#home-text').text('PRESS HERE TO START');
+        }
+    };
 })
 
 function show_box() {
