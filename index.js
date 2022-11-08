@@ -9,6 +9,7 @@ let go_back = 1;
 let mobile = 0;
 
 $(function onload() {
+    alert('들어왔습니다!');
     let width = $('.change-box').css('width');
     $('.show').css('width', width);
     
