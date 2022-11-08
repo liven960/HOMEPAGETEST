@@ -25,7 +25,7 @@ $(function onload() {
     };
 })
 
-$(document).on('click', '#home-graphic', function (e) {
+$('#home-graphic').on('click', function (e) {
     if (mobile == 1){
         window.location.href = './main';
     }
