@@ -25,7 +25,8 @@ $(function onload() {
     };
 })
 
-$('#home-graphic').on('click', function (e) {
+$('#home-graphic').on('touchstart', function (e) {
+    alert('됐습니다!');
     if (mobile == 1){
         window.location.href = './main';
     }
