@@ -148,7 +148,7 @@ function rebuild_box() {
 
 let before_this = "";
 $(function check_animate(){
-    $(document).on('mouseover click', '.pattern', function (e) {
+    $(document).on('mouseover touchenter', '.pattern', function (e) {
         if (before_this == ""){
             let id_name = $(this).attr('id');
             if (isNaN(id_name[9])) {
