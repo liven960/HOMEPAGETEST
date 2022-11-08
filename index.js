@@ -6,6 +6,7 @@ let container_i = 0;
 let item_j = 0;
 let animation_speed = 0;
 let go_back = 1;
+let mobile = 0;
 
 $(function onload() {
     let width = $('.change-box').css('width');
@@ -19,9 +20,16 @@ $(function onload() {
             console.log(1);
             $('#home-text').empty();
             $('#home-text').text('PRESS HERE TO START');
+            mobile = 1;
         }
     };
 })
+
+$(document).on('click', '#home-graphic', function (e) {
+    if (mobile == 1){
+        window.location.href = './main';
+    }
+});
 
 function show_box() {
     $('#pattern-body').empty();
